@@ -1,10 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sagarika</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 2px solid #667eea;
+        }
+
+        .social-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .experience-item {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-item h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .experience-item .date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #f8f9ff;
+            padding: 20px;
+            text-align: center;
+            color: #999;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello! I'm Sagarika</h1>
-    <p>This is my GitHub Pages site.</p>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/YOUR_GITHUB_ID?v=4" alt="Profile Picture" class="profile-pic">
+            <h1>Sagarikaa</h1>
+            <p>Developer | Designer | Creator</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- About Section -->
+            <section class="section">
+                <h2>👋 About Me</h2>
+                <p>
+                    Hi! I'm Sagarika, a passionate product manager and pdeveloper I love creating beautiful, 
+                    user-friendly applications and exploring new technologies. When I'm not coding, 
+                    you can find me learning something new or contributing to open-source projects.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section">
+                <h2>🛠️ Skills</h2>
+                <div class="skills">
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">UI/UX Design</div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section">
+                <h2>💼 Experience</h2>
+                <div class="experience-item">
+                    <h3>Junior Developer</h3>
+                    <div class="date">Jan 2024 - Present</div>
+                    <p>Working on web development projects and learning best practices.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Open Source Contributor</h3>
+                    <div class="date">2023 - Present</div>
+                    <p>Contributing to various open-source projects and improving my skills.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section">
+                <h2>🔗 Connect With Me</h2>
+                <div class="social-links">
+                    <a href="https://github.com/sagarikaa" class="social-btn">GitHub</a>
+                    <a href="https://linkedin.com/in/sagarikaa" class="social-btn">LinkedIn</a>
+                    <a href="mailto:your.email@example.com" class="social-btn">Email</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Sagarikaa. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
